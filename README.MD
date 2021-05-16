@@ -1,0 +1,5 @@
+- 🔭 I’m currently working on Ho Chi Minh University of Science
+- 🌱 I’m currently learning javascript
+- 👯 I’m looking to collaborate on "software developer"
+- 🤔 I’m looking for help with devOps
+- 💬 Ask me about anthing! I can say you anything, but it's joke
