@@ -1,128 +1,200 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Love</title>
     <script src="https://unpkg.com/vue@next"></script>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-</head>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
 
-<style>
+  <style>
     .color-red {
-        color: #962d2d
+      color: #962d2d;
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <section>
-        <div class="bg-pink-100 text-white py-8">
-            <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
-                <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-                    <p class="ml-2 color-red uppercase tracking-loose">Độc lập ngày ấy</p>
-                    <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 text-black">Từ ngày mất tự do
-                    </p>
-                    <p class="text-sm md:text-base mb-4 text-black">
-                        Đây là từ lúc tôi mất tự do các ông ạ, nó xảy ra bao chuyện, khó khăn trăm bề, khổ cực gian
-                        truân.
-                        Thế mà các ông cứ thích đâm đầu vào là sao tôi chẳng hiểu nổi,
-                        Thôi đi các ông, nghe tôi này. Ny tui là tuyệt vời nhất.
-                    </p>
-                    <a href="heart.html"
-                        class="bg-transparent mr-auto hover:bg-yellow-300 text-yellow-300 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
-                        Bấm vào đi nào</a>
-                </div>
-                <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
-                    <div class="container mx-auto w-full h-full">
-                        <div class="relative wrap overflow-hidden p-10 h-full">
-                            <div class="border-2-2 border-yellow-555 absolute h-full border"
-                                style="right: 50%; border: 2px solid #FFC100; border-radius: 1%;"></div>
-                            <div class="border-2-2 border-yellow-555 absolute h-full border"
-                                style="left: 50%; border: 2px solid #FFC100; border-radius: 1%;"></div>
-                            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                                <div class="order-1 w-5/12"></div>
-                                <div class="order-1 w-5/12 px-1 py-4 text-right">
-                                    <p class="mb-3 text-base font-bold color-red">16/01/2021</p>
-                                    <h4 class="mb-3 font-bold text-black text-lg md:text-2xl">Đánh dấu</h4>
-                                    <p class="text-black text-sm md:text-base leading-snug text-opacity-100">
-                                        Ngày hôm đó, như bao hôm nào, chú đồng chí nhỏ, gọi tôi ra phòng, đi dưới lòng
-                                        vòng.
-                                        Rồi chợt nhận ra, chú hỏi tôi rằng, mình là gì của nhau?
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="mb-8 flex justify-between items-center w-full right-timeline">
-                                <div class="order-1 w-5/12"></div>
-                                <div class="order-1  w-5/12 px-1 py-4 text-left">
-                                    <p class="mb-3 text-base font-bold color-red">24/01/2021</p>
-                                    <h4 class="mb-3 font-bold text-lg md:text-2xl text-black">Xuân tình nguyện</h4>
-                                    <p class="text-sm md:text-base leading-snug text-opacity-100 text-black">
-                                        Có lẽ là lần đầu tiên chúng tôi dỗi nhau, chắc bởi vì tôi còn cái tính hay chơi,
-                                        thích tung tăng mà làm cô ấy "GHEN" ấy. Mà cũng từ đó tôi sống tốt hơn rồi.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                                <div class="order-1 w-5/12"></div>
-                                <div class="order-1 w-5/12 px-1 py-4 text-right">
-                                    <p class="mb-3 text-base font-bold color-red">16/05/2021</p>
-                                    <h4 class="mb-3 font-bold text-black text-lg md:text-2xl">Kỉ niệm cái này ra đời
-                                    </h4>
-                                    <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
-                                        Có những thứ gọi là tôi không nhớ, tôi hay quên, tôi làm bạn ấy phải suy nghĩ về
-                                        tôi nhiều.
-                                        Nên tối đó, ngồi đặt lịch hẹn lại hết các ngày gì đó để nó nhắc tui, tránh bị
-                                        đâu lại bay màu không hiểu.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="mb-8 flex justify-between items-center w-full right-timeline" id="today-event">
-                                <div class="order-1 w-5/12"></div>
-
-                                <div class="order-1  w-5/12 px-1 py-4">
-                                    <p class="mb-3 text-base color-red font-bold">{{today}}</p>
-                                    <h4 class="mb-3 font-bold text-black text-lg md:text-2xl text-left">Anniversary
-                                        {{anniversaryday}} days</h4>
-                                    <p class="text-sm md:text-base leading-snug text-black text-opacity-100">
-                                        Sống qua ngày thôi anh em ơi, deadline tới kìa.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <img class="mx-auto -mt-20 md:-mt-20" src="images/love.png" />
-                    </div>
-                </div>
+      <div class="bg-pink-100 text-white py-8">
+        <div
+          class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24"
+        >
+          <div
+            class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8"
+          >
+            <p class="ml-2 color-red uppercase tracking-loose">
+              Độc lập ngày ấy
+            </p>
+            <p
+              class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 text-black"
+            >
+              Từ ngày mất tự do
+            </p>
+            <p class="text-sm md:text-base mb-4 text-black">
+              Đây là từ lúc tôi mất tự do các ông ạ, nó xảy ra bao chuyện, khó
+              khăn trăm bề, khổ cực gian truân. Thế mà các ông cứ thích đâm đầu
+              vào là sao tôi chẳng hiểu nổi, Thôi đi các ông, nghe tôi này. Ny
+              tui là tuyệt vời nhất.
+            </p>
+            <div class="flex flex-row justify-start items-center gap-1">
+              <a
+                href="heart.html"
+                class="bg-transparent mr-auto hover:bg-pink-500 text-pink-500 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-pink-500 hover:border-transparent"
+              >
+                Bấm vào đi nào</a
+              >
+              <a
+                href="bus-heart.html"
+                class="bg-transparent mr-auto hover:bg-pink-500 text-pink-500 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-pink-500 hover:border-transparent"
+              >
+                Bấm vào đi nào 2</a
+              >
             </div>
+          </div>
+          <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
+            <div class="container mx-auto w-full h-full">
+              <div class="relative wrap overflow-hidden p-10 h-full">
+                <div
+                  class="border-2-2 border-yellow-555 absolute h-full border"
+                  style="
+                    right: 50%;
+                    border: 2px solid #ffc100;
+                    border-radius: 1%;
+                  "
+                ></div>
+                <div
+                  class="border-2-2 border-yellow-555 absolute h-full border"
+                  style="
+                    left: 50%;
+                    border: 2px solid #ffc100;
+                    border-radius: 1%;
+                  "
+                ></div>
+                <div
+                  class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                >
+                  <div class="order-1 w-5/12"></div>
+                  <div class="order-1 w-5/12 px-1 py-4 text-right">
+                    <p class="mb-3 text-base font-bold color-red">16/01/2021</p>
+                    <h4 class="mb-3 font-bold text-black text-lg md:text-2xl">
+                      Đánh dấu
+                    </h4>
+                    <p
+                      class="text-black text-sm md:text-base leading-snug text-opacity-100"
+                    >
+                      Ngày hôm đó, như bao hôm nào, chú đồng chí nhỏ, gọi tôi ra
+                      phòng, đi dưới lòng vòng. Rồi chợt nhận ra, chú hỏi tôi
+                      rằng, mình là gì của nhau?
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="mb-8 flex justify-between items-center w-full right-timeline"
+                >
+                  <div class="order-1 w-5/12"></div>
+                  <div class="order-1 w-5/12 px-1 py-4 text-left">
+                    <p class="mb-3 text-base font-bold color-red">24/01/2021</p>
+                    <h4 class="mb-3 font-bold text-lg md:text-2xl text-black">
+                      Xuân tình nguyện
+                    </h4>
+                    <p
+                      class="text-sm md:text-base leading-snug text-opacity-100 text-black"
+                    >
+                      Có lẽ là lần đầu tiên chúng tôi dỗi nhau, chắc bởi vì tôi
+                      còn cái tính hay chơi, thích tung tăng mà làm cô ấy "GHEN"
+                      ấy. Mà cũng từ đó tôi sống tốt hơn rồi.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+                >
+                  <div class="order-1 w-5/12"></div>
+                  <div class="order-1 w-5/12 px-1 py-4 text-right">
+                    <p class="mb-3 text-base font-bold color-red">16/05/2021</p>
+                    <h4 class="mb-3 font-bold text-black text-lg md:text-2xl">
+                      Kỉ niệm cái này ra đời
+                    </h4>
+                    <p
+                      class="text-sm md:text-base leading-snug text-black text-opacity-100"
+                    >
+                      Có những thứ gọi là tôi không nhớ, tôi hay quên, tôi làm
+                      bạn ấy phải suy nghĩ về tôi nhiều. Nên tối đó, ngồi đặt
+                      lịch hẹn lại hết các ngày gì đó để nó nhắc tui, tránh bị
+                      đâu lại bay màu không hiểu.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="mb-8 flex justify-between items-center w-full right-timeline"
+                  id="today-event"
+                >
+                  <div class="order-1 w-5/12"></div>
+
+                  <div class="order-1 w-5/12 px-1 py-4">
+                    <p class="mb-3 text-base color-red font-bold">{{today}}</p>
+                    <h4
+                      class="mb-3 font-bold text-black text-lg md:text-2xl text-left"
+                    >
+                      Anniversary {{anniversaryday}} days
+                    </h4>
+                    <p
+                      class="text-sm md:text-base leading-snug text-black text-opacity-100"
+                    >
+                      Sống qua ngày thôi anh em ơi, deadline tới kìa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img class="mx-auto -mt-20 md:-mt-20" src="images/love.png" />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <script>
-        function DaysBetween(StartDate, EndDate) {
-            // The number of milliseconds in all UTC days (no DST)
-            const oneDay = 1000 * 60 * 60 * 24;
-            // A day in UTC always lasts 24 hours (unlike in other time formats)
-            const start = Date.UTC(EndDate.getFullYear(), EndDate.getMonth(), EndDate.getDate());
-            const end = Date.UTC(StartDate.getFullYear(), StartDate.getMonth(), StartDate.getDate());
-            // so it's safe to divide by 24 hours
-            return (start - end) / oneDay;
-        }
-        const Today = {
-            data() {
-                const dateTime = new Date();
-                const anniversaryday = DaysBetween(new Date(2021, 0, 16), dateTime)
-                return {
-                    today: dateTime.getDate() + '/' + (dateTime.getMonth() + 1) + '/' + dateTime.getFullYear(),
-                    anniversaryday
-                }
-            }
-        }
+      function DaysBetween(StartDate, EndDate) {
+        // The number of milliseconds in all UTC days (no DST)
+        const oneDay = 1000 * 60 * 60 * 24;
+        // A day in UTC always lasts 24 hours (unlike in other time formats)
+        const start = Date.UTC(
+          EndDate.getFullYear(),
+          EndDate.getMonth(),
+          EndDate.getDate()
+        );
+        const end = Date.UTC(
+          StartDate.getFullYear(),
+          StartDate.getMonth(),
+          StartDate.getDate()
+        );
+        // so it's safe to divide by 24 hours
+        return (start - end) / oneDay;
+      }
+      const Today = {
+        data() {
+          const dateTime = new Date();
+          const anniversaryday = DaysBetween(new Date(2021, 0, 16), dateTime);
+          return {
+            today:
+              dateTime.getDate() +
+              "/" +
+              (dateTime.getMonth() + 1) +
+              "/" +
+              dateTime.getFullYear(),
+            anniversaryday,
+          };
+        },
+      };
 
-        Vue.createApp(Today).mount('#today-event')
+      Vue.createApp(Today).mount("#today-event");
     </script>
-</body>
-
+  </body>
 </html>
